@@ -113,7 +113,8 @@ header .dropdown:hover .blog_menu{
 		letter-spacing: 10px;
 		margin-bottom: -18px;
 	}
-	.text_slide h3, .about_us h3, .menu_our h3{
+	.text_slide h3, .about_us h3, 
+	.menu_our h3, .reservation_our h3{
 		font-size: 30px;
 		text-transform: none;
 		letter-spacing: 4px;
@@ -989,7 +990,7 @@ header .dropdown:hover .blog_menu{
 		.about_us{
 			background: url(../images/about/img_1a.png) no-repeat;
 		}
-		.about_us	 h2, .menu_our h2{
+		.about_us	 h2, .menu_our h2, .reservation_our h2{
 			color: #fff;
 			margin-top: 31.5%;
 
@@ -1068,10 +1069,15 @@ header .dropdown:hover .blog_menu{
 			padding: 5.4% 0;
 			border: 3px solid #edeff2;
 		}
-/*-------------menu---------*/
+/*-------------menu_page---------*/
 	.menu_our{
 		background: url(../images/menu/menu_bg.png);
 	}
+	/*-----------reservation_page------*/
+	.reservation_our{
+		background: url(../images/reservation/reservation_bg.png);
+	}
+
 		@media (min-width: 1199px){
 			a.navbar-brand.logo{
 				margin-left: 86% !important;
@@ -1567,7 +1573,7 @@ header .dropdown:hover .blog_menu{
 			a.logo_about {
 				color: #000 !important;
 			}
-			.about_us h3{
+			.about_us h3, .menu_our h3, .reservation_our h3{
 				font-size: 24px;
 				letter-spacing: 2px;
 			}
@@ -1598,7 +1604,6 @@ header .dropdown:hover .blog_menu{
 				max-width: 580px;
 				max-height: 400px;
 			}	
-
 			.blog_text{
 				width: 46%;
 				left: 27%;
@@ -2055,5 +2060,7 @@ header .dropdown:hover .blog_menu{
 		ul.accordion li:nth-child(1):hover{
 			height: 196px;
 		} 	
-			
+		.reservation_our h2{
+			letter-spacing: 7px;
+		}	
 		}
