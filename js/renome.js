@@ -24,3 +24,23 @@ $(document).on("click", ".slider_2s .nav span", function() {
  sliderJS(obj, sl);
  return false;
 });
+$(window).scroll(function() {
+    var sb_m = 0; /* отступ сверху и снизу */
+    var mb = 150; /* высота подвала с запасом */
+    var st = $(window).scrollTop();
+    var sb = $(".fixed_blog");
+    var sbi = $(".fixed_blog");
+    var sb_ot = sb.offset().top;
+    var sbi_ot = sbi.offset().top;
+    var sb_h = sb.height();
+  
+    if(sb_h + $(document).scrollTop() + sb_m + mb < $(document).height()) {
+       if(st > sb_ot) {
+            var h = Math.round(st - sb_ot) + sb_m;
+            sb.css({"paddingTop" : h});
+        }
+        else {
+            sb.css({"paddingTop" : 0});
+        }
+    }
+});
