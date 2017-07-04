@@ -1,11 +1,11 @@
 h2{
-	font: 50px 'AXIS', sans-serif;
+	font: 50px 'Axis', sans-serif;
 	color: #1e2633;
 	font-weight: 700;
 	letter-spacing: 12px;
-	margin-bottom: -2.5%;
+	margin-bottom: -1.5%;
 }
-h3{
+h3 {
 	font: 12px 'Montserrat', sans-serif;
 	color: #985e5b;
 	font-weight: 800;
@@ -19,11 +19,15 @@ h5, h4{
 }
 p{
 	font: 12px 'Montserrat', sans-serif;
-	color: #656565;
+	color: #1e2633;
 	letter-spacing: 2px; 
 	margin-top: -1%;
 	line-height: 30px;
 }
+a:active, a:hover {
+    outline: none;
+}
+
 .nav_page{
 	margin-bottom: 0;
 	padding: 25px 0;
@@ -35,7 +39,14 @@ p{
 .all .nav_one>.open>a,
 .all .nav_one>.open>a:focus,
 .all .nav_one>.open>a:hover{
-	background-color: #fff;
+	background-color: transparent;
+}
+ul.nav li.dropdown:hover ul.dropdown-menu{
+display: block;
+margin: 0;
+}
+a.menu:after, .dropdown-toggle:after {
+content: none;
 }
 a.logo, footer a.logo_1{
 	font: 25px 'Pacifico', cursive;
@@ -46,7 +57,7 @@ a.logo, footer a.logo_1{
 .nav_one{
 	width: 104%;
 }
-.nav_one>li >a, .blog_menu a, .menu_nav a{
+.nav_one>li >a, .blog_menu a, .menu_nav a, .list_blog_single a{
 	font: 12px 'Montserrat', sans-serif;
 	font-weight: 800;
 	color: #1e2633 !important;
@@ -69,20 +80,20 @@ header .dropdown:hover .blog_menu{
 	display: block;
 }
 .blog_menu{
-	position: absolute;
 	display: none;
 	min-width: 120px;
 	top: 116%;
 	left: -63%;
 	text-align: center;
 	border: 0;
-	box-shadow: none
+	box-shadow: none;
+	border-radius: 0;
 }
 .blog_menu li{
 	margin-top: 15%;
 }
 .blog_menu>li>a:hover{
-	background-color: #fff;
+	background-color: transparent;
 }
 .border_right{
 	border-right: 1px solid #000;
@@ -90,17 +101,12 @@ header .dropdown:hover .blog_menu{
 	padding-bottom: 0 !important;
 	margin-top: 17%;	
 }
-/*a.border_right{
-	margin-right: 13%;
-	text-decoration: none;
-	color: #1e2633;
+.blog_our .border_right, .menu_our .border_right,
+.about_us .border_right, .reservation_our .border_right{
+	border-right: 1px solid #fff;
 }
-.cart{
 
-	margin-top: 30%;
-	margin-left: 79%;
-	border-right: 1px solid #000;
-	}*/
+
 	/*--------slider_first--------*/
 	.text_slide{
 		text-align: left;
@@ -114,7 +120,7 @@ header .dropdown:hover .blog_menu{
 		margin-bottom: -18px;
 	}
 	.text_slide h3, .about_us h3, 
-	.menu_our h3, .reservation_our h3{
+	.menu_our h3, .reservation_our h3, .blog_our  h3{
 		font-size: 30px;
 		text-transform: none;
 		letter-spacing: 4px;
@@ -196,9 +202,10 @@ header .dropdown:hover .blog_menu{
 	hr{
 		border-color: #ebebeb;
 		margin-top: 0.7%;
+		width: 100%;
 	}
 	.food p{
-		font: 22px 'Streetwear',sans-serif;
+		font: 22px "Streetwear",sans-serif;
 		margin: 7.5% 0 4%;
 		color: #1e2633;
 	}
@@ -209,7 +216,7 @@ header .dropdown:hover .blog_menu{
 		line-height: 25px;
 	}
 	p.price{
-		font: 25px 'Jaapokkienchance-Regular',sans-serif;
+		font: 25px 'JaapokkienchanceRegular',sans-serif;
 	}
 	span.cents{
 		color: #dcdee0;
@@ -219,6 +226,17 @@ header .dropdown:hover .blog_menu{
 	}
 	.menu_img{
 		margin-left: -62%;
+		margin-bottom: 76%;
+	}
+	.menu_1{
+		margin-top: 13%;
+	}
+	.menu_3{
+		margin-bottom: 50%;
+	}
+	.menu_7, .menu_10{
+		margin-top: -27%;
+    margin-bottom: 36%;
 	}
 	.dish_description li{
 		margin-bottom: 10%;
@@ -230,8 +248,8 @@ header .dropdown:hover .blog_menu{
 		margin-bottom: %;
 	}
 	.menu_price li{
-		margin-top: 14%;
-		margin-bottom: 62%;
+		margin-top: 2%;
+		margin-bottom: 84%;
 	}
 	li.atlantic{
 		margin-bottom: 12%;
@@ -274,21 +292,44 @@ header .dropdown:hover .blog_menu{
 		margin-right: 3.8%;
 		margin-bottom: 	9%;
 	}
-	.form_first input, .form_first select, .form_second input, .form_second select{
+	 input#datetimepicker1{
+		width: 64%;
+    margin-left: 24%;
+    margin-top: -21%;
+    position: relative;
+    z-index: 500;
+	}
+	.calendar{
+		margin-left: -67%;
+	}
+	.arrow_date{
+		float: right;
+		margin-top: -6.8%;
+		margin-right: 12.5% !important;
+	}
+	.form_first input, .form_first select,
+	.form_second input, .form_second select,
+	input#datetimepicker1, .form_bs input{
 		border: 0;
 		border-radius: 0;
 		border-bottom: 3px solid #f7f7f7;
 		box-shadow: inset 0 0 0;
 		font: 15px 'Montserrat', sans-serif;
 		font-weight: 800;
-		color: #1e2633;	 	
+		color: #1e2633;	
+		background-color: transparent;	
+		cursor: pointer;
 	}
+	:-ms-input-placeholder.form-control {
+		color: #1e2633;
+	}
+
 	.form_first select.form-control{
 		margin-top: 	-4%;
 	}
-	.new-select-style select, .new-select-style input.calendar {
+	.new-select-style select{
 		background: transparent;
-		width: 154px;
+		width: 110%;
 		line-height: 1;
 		-webkit-appearance: none;
 		/* for FF */
@@ -297,20 +338,17 @@ header .dropdown:hover .blog_menu{
 		text-overflow: '';
 		/* for IE */
 		-ms-appearance: none;
-		appearance: none!important;
+		appearance: none !important;
 		padding-bottom: 	5px;
 	}
 	select::-ms-expand {
 		display: none;
 	}
-	.new-select-style input.calendar{
-		padding-bottom: 	2px;
-	}
 	.new-select-style{
 		display: inline-block;
 		overflow: hidden;
 		background: url(../images/one_page/arrow_down.png) no-repeat right;
-		width: 155px;
+		width: 65%;
 	}
 	input.ind_table{
 		font-size: 	11px;
@@ -990,12 +1028,14 @@ header .dropdown:hover .blog_menu{
 		.about_us{
 			background: url(../images/about/img_1a.png) no-repeat;
 		}
-		.about_us	 h2, .menu_our h2, .reservation_our h2{
+		.about_us	 h2, .menu_our h2, .reservation_our h2, .blog_our h2,
+		.contact_our h2{
 			color: #fff;
 			margin-top: 31.5%;
 
 		}
-		.about_us h3, .menu_our h3{
+		.about_us h3, .menu_our h3, .reservation_our h3, .blog_our h3,
+		.contact_our h3{
 			margin-bottom: 7%;
 		}
 		.history, .goals{
@@ -1017,6 +1057,9 @@ header .dropdown:hover .blog_menu{
 			margin: 0 auto;
 		}
 		ul.accordion{
+			display: -webkit-box;
+			 display: -moz-box;
+			 display: -ms-flexbox;
 			display: -webkit-flex;
 			display: -moz-flex;
 			display: -ms-flex;
@@ -1024,6 +1067,7 @@ header .dropdown:hover .blog_menu{
 			display: flex;
 			margin-top: 12%;
 			padding: 0;
+			-webkit-justify-content: center;
 			justify-content: center;
 		}
 		ul.accordion img{
@@ -1078,6 +1122,285 @@ header .dropdown:hover .blog_menu{
 		background: url(../images/reservation/reservation_bg.png);
 	}
 
+	/*-------blog_page------*/
+	.blog_our{
+		background: url(../images/blog/blog_bg.png) no-repeat;
+	}
+	.post{
+		margin-top: 10%;
+	}
+	.main{
+		position: relative;
+	}
+	.main h3{
+		margin: 1% 0 2.5%;
+		font-size: 30px;
+		text-transform: uppercase;
+		color: #1e2633;
+		font-weight: 400;
+	}
+	p.date3{
+		font-weight: 800;
+		color: #bbbdbf;
+		margin-bottom: 2.5%;
+	}
+	p.department{
+		font-family: 'Axis', sans-serif;
+		color: #985e5b;
+	}
+	p a.continue{
+		font: 12px 'Montserrat' sans-serif;
+		font-weight: 800;
+		color: #985e5b;
+		margin-top: 2%;
+	}
+	p.continue:hover, .cd-pagination a{
+		color: #272a36;
+	}
+	p.description{
+		margin-top: 5.5%;
+	}
+	video{
+		width: 100%;
+		height: auto;
+		max-height: 100%; 
+	}
+	.fixed_blog{
+		margin-top: 20%;
+		
+	}
+	#form_third input{
+		background: url(../images/one_page/search.png) no-repeat right;
+		outline: none;
+		height: 30px;
+		border: 0;
+		border-bottom: 3px solid #edeff2;
+		-webkit-box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.75);
+		box-shadow: inset 0px 0px 0px rgba(0,0,0,0.75);
+		border-radius: 0;
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+	}
+	input[type="search"]{
+		color: #bbbdbf;
+	}
+	h3.categories{
+		font-size: 12px ;
+		font-weight: 800 ;
+		margin-top: 19% ;
+		margin-bottom: 9% ;
+	}
+
+	.col_fixed{
+		padding-left: 0;
+	}
+	.fixed_list li{
+		margin-bottom: 20%;
+	}
+	.fixed_list  li  a, .col_fixed p, .fixed_date, .small_post p a,
+	.read_more a{
+		font: 13px 'Montserrat', sans-serif;
+		color: #1e2633;
+		text-decoration: none;
+	}
+	.small_post p a, .read_more a{
+		letter-spacing: 0.1em;
+	}
+	.small_post{
+		margin-bottom: 8.5%;
+	}
+	p.fixed_date{
+		font-size: 11px;
+		color: #bbbdbf;
+		margin-top: -1%;
+	}
+	.popular_post{
+		padding-top: 28%;
+	}
+	.pagination1{
+		margin-top: 4%;
+	}
+	.pagination1 img{
+		display: inline-block;
+	}
+
+	.cd-pagination{
+		display: inline-block;
+		width: 100%;
+		margin: 0;
+		padding:18px;
+		border-top: 2px solid #edeff2;
+ 	}
+ 	.cd-pagination li{
+ 		display: inline;
+ 		}
+ 	.cd-pagination li a {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 12px 18px;
+  font: 15px 'Montserrat', sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+}
+.cd-pagination a:hover,.current, .fixid_list a:hover,.small_post p a:hover,
+.col_fixed a:hover, .read more a {
+	color: #985e5b !important;
+} 
+
+.cd-pagination .button:first-of-type {
+  float: left;
+}
+.cd-pagination .button:last-of-type {
+  float: right;
+}
+.cd-pagination .button1 a{
+  border-right: 2px solid #edeff2;
+
+}
+.cd-pagination .button2 a{
+  border-left: 2px solid #edeff2;
+ 
+}
+.pagination-our a.arrow_left1{
+	background: url(../images/blog/arrow_left.png) no-repeat 1px 0px;
+	display: block;
+	width: 15px;
+	height: 25px;
+}
+.pagination-our a.arrow_left1:hover{
+	background-position: 1px -25px;
+}
+.pagination-our a.arrow_right1{
+	background: url(../images/blog/arrow_right.png) no-repeat 20px 0px;
+	display: block;
+	width: 15px;
+	height: 25px;
+}
+.pagination-our a.arrow_right1:hover{
+	background-position: 20px -25px;
+}
+/*--------blog_single_post page--*/
+
+.detail{
+	margin-top: 4.7%;
+	margin-bottom: -3%;
+	font-size: 15px;
+}
+.border_block_left{
+	border-left: 2px solid #edeff2;
+	padding-left: 3%;
+}
+.list_blog_single{
+	margin-top: 2.9%;
+	margin-bottom: 8.5%;
+}
+.list_blog_single > li{
+	margin-right: 2%;
+}
+.list_blog_single > li:last-child{
+	margin-right: 0;
+	margin-left: 53%;
+}
+.list_blog_single > li > a{
+	font-weight: 400;
+}
+.blog_menu1{
+	background: #f5f7fa;
+}
+.blog_menu1>li{
+	margin-top: 5%;
+}
+.blog_menu1 a{
+	font-size: 10px;
+}
+.avatar{
+	margin-bottom: 17.5%;
+}
+.avatar p, p.date_bs{
+	font-size: 11px;
+	line-height: 2.6;
+}
+p.rich, p.rich1{
+	font-weight: 800;
+}
+.avatar img, .avatar .photo {
+	float: left;
+	margin-top: 1.5% ;
+	margin-right:  3%;
+}
+p.rich1{
+	margin-bottom: 7.8%;
+}
+.read_more img{
+	margin-bottom: 3%;
+}
+.read_more p{
+	line-height: 15px;
+}
+p.date_bs{
+	color: #dfe0e1;
+	margin-bottom: 40%;
+}
+.comments .avatar{
+	margin-bottom: 10%;
+}
+.avatar2{
+	margin-left: 6.4%;
+}
+.comments .avatar p{
+	font-size: 12px;
+}
+.comments p.rich_name{
+	font: 11px "AXIS",sans-serif;
+	margin-top: 0 ;
+}
+span.comment{
+	float:  right;
+	font: 11px 'Montserrat', sans-serif;
+	color: #dfe0e1;
+}
+.avatar .photo{
+	margin-right: 0;
+}
+.comments .avatar img{
+	margin: -7% 11% 13%;
+	
+}
+.comments .avatar_text{
+	overflow: hidden;
+}
+.photo a{
+	text-decoration: none;
+	border-top: 2px solid #dcdee0;
+	font: 10px "AXIS",sans-serif;
+	color: #985e5b;
+	padding-right: 32%;
+	padding-top: 7%;
+}
+.form_bs .form-group{
+	margin-top: 5.7%;
+}
+.form_bs input{
+	font-size:  11px ;
+	border-bottom-color: #f5f7fa;
+}
+button.post_comm{
+	background: #1e2633;
+	color: #fff;
+	margin-top: 4.5%;
+	margin-bottom: 13%;
+}
+button.post_comm:hover{
+	background: #985e5b;
+}
+
+/*---contact_page---*/
+.contact_our{
+	background: url(../images/contact/img_cont.jpg) no-repeat;
+}
 		@media (min-width: 1199px){
 			a.navbar-brand.logo{
 				margin-left: 86% !important;
@@ -1099,6 +1422,12 @@ header .dropdown:hover .blog_menu{
 			}
 			.p_right{
 				margin-left: -6%;
+			}
+			.cd-pagination .button1 a{
+				margin-left: 595%;
+			}
+			.cd-pagination .button2 a{
+				margin-left: -594%;
 			}
 		}
 		@media (max-width: 1199px){
@@ -1134,7 +1463,7 @@ header .dropdown:hover .blog_menu{
 				margin-top: 1%;
 			}
 			.menu_price li {
-				margin-bottom: 75%;
+				margin-bottom: 97%;
 			}
 			.row_last {
 				margin-bottom: 6.7%;
@@ -1210,6 +1539,9 @@ header .dropdown:hover .blog_menu{
 			.opening{
 				margin: 25% 0;
 			}
+			.list_blog_single > li:last-child {
+				margin-left: 30%;
+			}
 		}
 		@media (max-width: 991px){
 			h2{
@@ -1231,7 +1563,7 @@ header .dropdown:hover .blog_menu{
 			}
 
 			.nav_one>li{
-				margin-left: 	0;
+				margin-left: 	-3%;
 			}
 			.text_slide {
 				left: 35.8%;
@@ -1277,7 +1609,7 @@ header .dropdown:hover .blog_menu{
 				line-height: 17px;
 			}
 			.menu_price li {
-				margin-bottom: 80%;
+				margin-bottom: 92%;
 			}
 			p.quote{
 				margin-top: 55%;
@@ -1342,12 +1674,13 @@ header .dropdown:hover .blog_menu{
 			a.navbar-brand.logo {
 				margin-left: -7% !important;
 			}
+			.list_blog_single > li:last-child {
+				margin-left: 4%;
+			}
 			
 		}
 		@media (max-width: 923px){
-			.nav_one>li{
-				margin-left: 	-2.7%;
-			}
+			
 			.search{
 				margin-left: 	35%;
 			}
@@ -1360,7 +1693,10 @@ header .dropdown:hover .blog_menu{
 			}
 			.nav_page {
 				padding: 16px 0;
+			}	.nav_one {
+				width: 100%;
 			}
+		
 			.navbar-default .navbar-toggle{
 				border: 0;
 			}
@@ -1488,18 +1824,33 @@ header .dropdown:hover .blog_menu{
 				margin-bottom: 5%;
 			}
 			.img_10 {
-				margin-left: 25%;
+				margin-left: 23%;
 				margin-top: -12%;
 			}
 			.img_9 {
 				top: 0;
-				margin-left: 16%;
+				margin-left: 11%;
 			}
 			.form_first img {
 				margin-bottom: 3%;
 			}
 			.new-select{
 				margin-top: 	6%;
+			}
+			.form_first select.form-control{
+				margin-top: 0%;
+			}
+			input#datetimepicker1 {
+				width: 66%;
+				margin-left: 21%;
+				margin-top: -8%;
+			}
+			.arrow_date {
+				margin-top: -2.8%;
+				margin-right: 14% !important;
+			}
+			.calendar {
+				margin-left: -65%;
 			}
 			.form_second .text-right{
 				text-align: center;
@@ -1593,7 +1944,32 @@ header .dropdown:hover .blog_menu{
 			.nav_about2 >li > a, .list-second > li> a {
 				color: #000 !important;
 			}	
-		} 
+			.main .post h3{
+				font-size: 20px;
+			}
+			.avatar p{
+				text-align: center;
+			}
+			.avatar img{
+				float: none;
+				margin: 0 auto;
+			} 
+			p.date_bs{
+				color: #dfe0e1;
+				margin-bottom: 10%;
+			}
+			.comments .avatar p{
+				text-align: left;
+			}
+			span.comment{
+				color: #1e2633;
+				font-weight: 800;
+			}
+			.gras{
+				text-align: center;
+			}
+
+		}	
 		@media (max-width: 645px){
 		.slider_2s {
 				max-width: 580px;
@@ -1611,7 +1987,7 @@ header .dropdown:hover .blog_menu{
 		}	
 		@media (max-width: 475px){
 			h2{
-				letter-spacing: 10px;
+				letter-spacing: 8px;
 			}
 			.text_slide h2{
 				letter-spacing: 6px;
@@ -1711,46 +2087,46 @@ header .dropdown:hover .blog_menu{
 				margin-top: -50px;
 			}
 			.price_1{
-				top: -593px;
+				top: -616px;
 			}
 			.price_2{
-				top: -1231%;
+				top: -1131%;
 			}
 			.price_3{
-				top: -632%;
+				top: -641%;
 			}
 			.price_4{
-				top: -42px;
+				top: -66px;
 			}
 			.price_5{
-				top: -613px;
+				top: -639px;
 			}
 			.price_6{
-				top: -422px;
+				top: -450px;
 			}
 			.price_7 {
-				top: -255px;
+				top: -282px;
 			}
 			.price_8 {
-				top: -86px;
+				top: -113px;
 			}
 			.price_9 {
-				top: -399px;
+				top: -420px;
 			}
 			.price_10 {
-				top: -229px;
+				top: -250px;
 			}
 			.menu_11{
 				margin-top: -51px;
 			}
 			.price_11 {
-				top: -63px;
+				top: -82px;
 			}
 			.menu_12{
 				margin-top: 11px;
 			}
 			.price_12 {
-				top: -447px;
+				top: -463px;
 			}
 			.price_13 {
 				top: -230px;
@@ -1777,6 +2153,18 @@ header .dropdown:hover .blog_menu{
 			.form_first img {
 				margin-bottom: 5%;
 			}
+			input#datetimepicker1{
+				margin-top: -15%;
+				margin-left: 24%;
+			}
+			.calendar{
+				margin-top: -10%;
+			}
+			.arrow_date{
+				margin-top: -4.8%;
+				margin-right: 12% !important;
+			}
+
 			button.order{
 				margin-top: -84%;
 			}
@@ -1808,7 +2196,7 @@ header .dropdown:hover .blog_menu{
 			height: 100px;
 		}
 		ul.accordion li:hover{
-			height: 220px;
+			height: 195px;
 			width: 320px;
 		}
 		ul.accordion:hover li:nth-child(6){
@@ -1822,8 +2210,15 @@ header .dropdown:hover .blog_menu{
 		} 
 		ul.accordion li:nth-child(1):hover{
 			height: 220px;
-		} 	
 		}
+		.list_blog_single > li:last-child {
+			margin-left: 14%;
+		} 
+		.comments .avatar_text{
+			clear: left;
+		}	
+
+	}
 
 		@media (max-width: 375px){
 
@@ -1844,52 +2239,53 @@ header .dropdown:hover .blog_menu{
 			}
 			.menu_7 {
 				margin-top: -46px;
-				margin-bottom: 104px;
+				margin-bottom: 111px;
 			}
 			.menu_10,.menu_11, .menu_13{
 				margin-top: -24px;
 			}
 			.menu_12{
 				margin-top: 10px;
+				margin-bottom: 156px;
 			}
 			p.price {
 				left: -7px;
 			}
 			.price_1 {
-				top: -691px;
+				top: -707px;
 			}
 			.price_2 {
-				top: -475px;
+				top: -491px;
 			}
 			.price_3 {
-				top: -260px;
+				top: -278px;
 			}
 			.price_4 {
-				top: -66px;
+				top: -80px;
 			}
 			.price_5 {
-				top: -691px;
+				top: -710px;
 			}
 			.price_6 {
-				top: -474px;
+				top: -492px;
 			}
 			.price_7 {
-				top: -306px;
+				top: -320px;
 			}
 			.price_8 {
-				top: -117px;
+				top: -124px;
 			}
 			.price_9 {
-				top: -449px;
+				top: -466px;
 			}
 			.price_10 {
-				top: -257px;
+				top: -268px;
 			}
 			.price_13 {
-				top: -232px;
+				top: -248px;
 			}
 			.price_14 {
-				top: -45px;
+				top: -57px;
 			}
 			.img_8{
 				left: 10%;
@@ -1904,7 +2300,7 @@ header .dropdown:hover .blog_menu{
 				font-size: 27px;
 			}
 			.row_slide_2 {
-				margin-top: 3%;
+				margin-top: 60%;
 			}
 			.slider_2s {
 				max-width: 290px;
@@ -1923,6 +2319,19 @@ header .dropdown:hover .blog_menu{
 			.list-second {
 				margin-top: -12.9%;
 				margin-left: 60%;
+			}
+			.cd-pagination li a{
+				padding-left: 11px;
+				padding-right: 11px;
+			}
+			.pagination-our a.arrow_right1{
+				background-position: 6px 0px;
+			}
+			.pagination-our a.arrow_right1:hover{
+				background-position: 6px -25px;
+			}
+			.list_blog_single > li:last-child {
+				margin-left: 0%;
 			}
 		}
 
@@ -2063,4 +2472,7 @@ header .dropdown:hover .blog_menu{
 		.reservation_our h2{
 			letter-spacing: 7px;
 		}	
+		.gras p{
+			text-align: left;
+		}
 		}
