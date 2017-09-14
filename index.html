@@ -5,86 +5,72 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="css/normalize.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"  integrity= "sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"  crossorigin= "anonymous">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"  integrity= "sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"  crossorigin= "anonymous">
 	<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
-      <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen">
-      <link rel="stylesheet" href="css/font.css">
-      <link rel="stylesheet" href="css/style.css">
-	<title>Home</title>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+  <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Home</title>
 </head>
 <body>
 	<header>
-	<div class="container-fluid">
-		<nav class="navbar navbar-default nav_page">
-			<div class="container-fluid">
-				<div class="row">
-				<div class="col-lg-1"></div>
-				<div class="col-lg-2 col-md-2 col-sm-2  text-center">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand logo" href="#">Renome</a>
+		<div class="container-fluid">
+			<nav class="navbar navbar-default nav_page">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-1"></div>
+						<div class="col-lg-2 col-md-2 col-sm-2  text-center">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand logo" href="#">Renome</a>
+							</div>
+						</div>
+						<div class="col-lg-9 col-md-10 col-sm-10">
+							<div class="collapse navbar-collapse all" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav nav_one">
+									<li class="active"><a href="index.html">HOME</a></li>
+									<li><a href="about.html">ABOUT</a></li>
+									<li><a href="menu.html">MENU</a></li>
+									<li><a href="reservation.html">RESERVATIONS</a></li>
+									<li  class="dropdown">
+										<a data-target="#" href="blog.html" class="dropdown-toggle" data-toggle="dropdown">BLOG</a>
+										<ul class="dropdown-menu blog_menu">
+											<li><a href="one_page.html">One Page</a></li>
+											<li><a href="portfolio.html">Portfolio</a></li>
+											<li><a href="#">Shortcodes</a></li>
+										</ul>
+									</li>
+									<li><a href="shop.html">SHOP</a></li>
+									<li><a href="contact.html" class="border_right">CONTACT</a></li>
+									<li><a href="#">
+										<img src="images/one_page/search.png" alt="search" class="search hidden-xs">
+										<img src="images/one_page/search.png" alt="search" class="search visible-xs"></a>
+									</li>
+									<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										<img src="images/one_page/cart.png" alt="cart">&nbsp;&nbsp;&nbsp;2</a>
+										<ul class="dropdown-menu blog_menu">
+											<li><a href="#">$44.50</a></li>
+											<li><a href="shop_shopping_cart.html">View Cart</a></li>
+											<li><a href="shop_checkout.html">Checkout</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
-				</div>
-				
-				<div class="col-lg-9 col-md-10 col-sm-10">
-				<div class="collapse navbar-collapse all" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav nav_one">
-						<li class="active">
-							<a href="index.html">HOME</a>
-						</li>
-						<li>
-							<a href="about.html">ABOUT</a>
-						</li>
-						<li>
-							<a href="menu.html">MENU</a>
-						</li>
-						<li>
-							<a href="reservation.html">RESERVATIONS</a>
-						</li>
-						<li  class="dropdown">
-							<a data-target="#" href="blog.html" class="dropdown-toggle" data-toggle="dropdown">BLOG</a>
-							<ul class="dropdown-menu blog_menu">
-							<li><a href="one_page.html">One Page</a></li>
-							<li><a href="#">Portfolio</a></li>
-							<li><a href="#">Shortcodes</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">SHOP</a>
-						</li>
-						<li>
-							<a href="contact.html" class="border_right">CONTACT</a>
-						</li>
-						<li>
-						<a href="#">
-						<img src="images/one_page/search.png" alt="search" class="search hidden-xs">
-						<img src="images/one_page/search.png" alt="search" class="search visible-xs"></a>
-						</li>
-						<li class="dropdown" visible-xs><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="images/one_page/cart.png" alt="cart">&nbsp;&nbsp;&nbsp;2</a>
-						<ul class="dropdown-menu blog_menu">
-							<li><a href="#">$44.50</a></li>
-							<li><a href="#">View Cart</a></li>
-							<li><a href="#">Checkout</a></li>
-						</ul>
-						</li>
-					</ul>
-				</div>
-				</div>
-				
-				</div>
-			</div>
-		</nav>
+			</nav>
 		</div>
 	</header>
 	<section class="slide_first">
@@ -93,7 +79,6 @@
 				<div class="carousel-inner">
 					<div class="active item">
 						<img src="images/one_page/slide_img1.jpg" alt="slide_img1">
-						
 						<div class="carousel-caption text_slide">
 							<h2>made with love</h2>
 							<h3>for you</h3>
@@ -108,7 +93,6 @@
 					</div>
 					<div class="item">
 						<img src="images/one_page/slide_img3.jpg "  alt="slide_img3">
-						
 						<div class="carousel-caption text_slide">
 							<h2>made with love</h2>
 							<h3>for you</h3>
@@ -119,7 +103,7 @@
 					<img src="images/one_page/arrow_left.png" alt="arrow_left" >
 				</a>
 				<a class="carousel-control right arrow_right" href="#myCarousel" data-slide="next">
-				<img src="images/one_page/arrow_right.png" alt="arrow_right" >
+					<img src="images/one_page/arrow_right.png" alt="arrow_right" >
 				</a>
 			</div>
 		</div>
@@ -132,13 +116,12 @@
 					<img src="images/one_page/img_4.png" alt="img_4" class="img-responsive img_4">
 					<img src="images/one_page/img_5.png" alt="img_5" class="img-responsive img_5">
 				</div>
-				
 				<div class="col-lg-4 col-md-5 col-sm-5 col-xs-12 col-right">
 					<h2>about</h2>
 					<h3>we create delicious memories</h3>
 					<p>Renome it is renowned restaurant delights the senses with elegant ambiance, gracious service and delectable menus in the heart of Manhattan’s. The distinctive setting boasts contemporary furnishings and finishes atop the restaurant’s grand modern architecture.</p>
 					<p> Renome offers the room for private dining where guests enjoy creative foods and sumptuous late night desserts.</p>
-					<p>&#9899;&#9899;&#9899;</p>
+					<p class="point">...</p>
 				</div>
 				<div class="col-lg-1 col-md-1"></div>
 			</div>
@@ -159,13 +142,11 @@
 						<input type="radio" id="two" value="2" name="tractor">
 						<input type="radio" id="three" value="3" name="tractor">
 						<input type="radio" id="four" value="4" name="tractor">
-						<div class="picture first_1">	
-							<img src="images/one_page/slide2_img1.png" alt="slide2_img1" class="img-responsive">
+						<div class="picture first_1"><img src="images/one_page/slide2_img1.png" alt="slide2_img1" class="img-responsive">
 							<label for="four" class="otra">
 								<img src="images/home/arrow_left.png" alt="arrow_left" class="arrow">
 							</label>
-							<label for="two" class="otra otra_two">
-								<img src="images/home/arrow_right.png" alt="arrow_right" class="arrow"></label>
+							<label for="two" class="otra otra_two"><img src="images/home/arrow_right.png" alt="arrow_right" class="arrow"></label>
 							<label for="three" class="afin"></label>
 							<label for="one" class="afin"></label>
 						</div>
@@ -206,57 +187,54 @@
 					</div>
 					<div class="slider_2s visible-xs">
 						<ul class="list-unstyled">
-							<li><img src="images/one_page/slide2_img1.png" alt="" class="img-responsive">
-							</li>
-							<li><img src="images/one_page/slide2_img2.png" alt="" class="img-responsive"></li>
-							<li><img src="images/one_page/slide2_img3.png" class="img-responsive"></li>
-							<li><img src="images/one_page/slide2_img4.png" alt="" class="img-responsive"></li>
-
+							<li><img src="images/one_page/slide2_img1.png" alt="img1" class="img-responsive"></li>
+							<li><img src="images/one_page/slide2_img2.png" alt="img2.png" class="img-responsive"></li>
+							<li><img src="images/one_page/slide2_img3.png"  alt="img3.png" class="img-responsive"></li>
+							<li><img src="images/one_page/slide2_img4.png" alt="img4.png" class="img-responsive"></li>
 						</ul>
 						<div class="text_img">
-								<p>8.95$</p>
-							</div>
+							<p>8.95$</p>
+						</div>
 					</div>	
 					<div class="row row_slide_2 row_slide_2h">
-						<div class="col-md-5  col-sm-5 col-xs-12 day1">
-							<p>Homemade baguette</p></div>
-							<div class="col-md-2  col-sm-3"></div>
-							<div class="col-md-2  col-sm-3">
-								<p class="day">Monday</p></div>
-								<div class="col-md-3"></div>	
-							</div>
-						</div>
+						<div class="col-md-5  col-sm-5 col-xs-12 day1">	<p>Homemade baguette</p></div>
+						<div class="col-md-2  col-sm-3"></div>
+						<div class="col-md-2  col-sm-3"><p class="day">Monday</p></div>
+						<div class="col-md-3"></div>	
 					</div>
 				</div>
-			</section>
-			<section class="menu">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-1 col-md-1"></div>
-			<div class="col-lg-4 col-md-5 col-sm-5 col-xs-12 text-right">
-				<h2>menu</h2>
-				<h3>elicious and beautiful</h3>
-				<p>In our menu you will find a great variety of delicious food that will satisfy the needs and tastes of everyone. We strive to source the highest quality ingredients for all of our dishes thereby enhancing the quality of services.</p>
-				<p>&#9899;&#9899;&#9899;</p>
 			</div>
-			<div class="col-lg-7 col-md-6 col-sm-7 col-xs-12">
-				<img src="images/one_page/img_6.png" alt="img_6" class="img-responsive img_6">
-				<img src="images/one_page/img_7.png" alt="img_7" class="img-responsive img_7 img7">
-			</div> 
 		</div>
+	</section>
+	<section class="menu">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-1 col-md-1"></div>
+				<div class="col-lg-4 col-md-5 col-sm-5 col-xs-12 text-right">
+					<h2>menu</h2>
+					<h3>elicious and beautiful</h3>
+					<p>In our menu you will find a great variety of delicious food that will satisfy the needs and tastes of everyone. We strive to source the highest quality ingredients for all of our dishes thereby enhancing the quality of services.</p>
+					<p class="point">...</p>
+				</div>
+				<div class="col-lg-7 col-md-6 col-sm-7 col-xs-12">
+					<img src="images/one_page/img_6.png" alt="img_6" class="img-responsive img_6">
+					<img src="images/one_page/img_7.png" alt="img_7" class="img-responsive img_7 img7">
+				</div> 
+			</div>
 		</div>
-		</section>
-		<section class="romantic">
-			<div class="container">	
-				<div class="row">
-					<div class="col-lg-5 col-md-6 col-sm-6"><img src="images/one_page/img_8.png" alt="img_8" class="img_8 img8 img-responsive">	</div>
+	</section>
+	<section class="romantic">
+		<div class="container">	
+			<div class="row">
+				<div class="col-lg-5 col-md-6 col-sm-6"><img src="images/one_page/img_8.png" alt="img_8" class="img_8 img8 img-responsive"></div>
 				<div class="col-lg-7 col-md-6 col-sm-6 text-center">
 					<p class="quote">"The most romantic and <br> perfect place"</p>
 					<p class="author text-uppercase" >john doe</p>
 				</div>
 			</div>
-		</section>
-		<section class="reservation">
+		</div>
+	</section>
+	<section class="reservation">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -267,87 +245,85 @@
 					<h2>reservation</h2>
 					<h3>Book your table at our restaurant now!</h3>
 					<p>Call you on the date of your reservation to confirm your table.  
-					If you do not receive an email, or do not hear from the restaurant, we would recommend calling to confirm your table and verify your reservation booking (+1 939 777 55 33).</p>
-					<p>&#9899;&#9899;&#9899;</p>
+						If you do not receive an email, or do not hear from the restaurant, we would recommend calling to confirm your table and verify your reservation booking (+1 939 777 55 33).
+					</p>
+					<p class="point">...</p>
 				</div>
 				<div class="col-lg-2 col-md-1 col-sm-1"></div>
 			</div>
 		</div>
-		</section>
-		<section class="service">
-			<div class="container-fluid">
-				<div class="row">
+	</section>
+	<section class="service">
+		<div class="container-fluid">
+			<div class="row">
 				<div class="col-lg-2 col-md-2 col-sm-1"></div>
 				<div class="col-lg-8 col-md-8 col-sm-10 text-center">
 					<h2>our services</h2>
 					<h3>advantages of our restaurant</h3>
 				</div>	
 				<div class="col-lg-2 col-md-2 col-sm-1"></div>	
+			</div>
+			<div class="row row_middle">
+				<div class="col-lg-3 col-lg-offset-1 col-md-4 col-sm-4 text-right ">
+					<p class="p_left">Pickup or Delivery</p>
 				</div>
-				<div class="row row_middle">
-         <div class="col-lg-3 col-lg-offset-1 col-md-4 col-sm-4 text-right ">
-				 <p class="p_left">Pickup or Delivery</p>
-				 </div>
-				 <div class="col-lg-3 col-lg-offset-1 col-md-4 col-sm-4 text-center col_middle">
-				 <p>Serving With Love</p>
-				 </div>
-				 <div class="col-lg-3 col-lg-offset-1 col-md-4 col-sm-4 ">
-				 <p class="p_right">Daily Lunch Specials</p>
-				 </div>
-				 <div class="col-lg-1"></div>
+				<div class="col-lg-3 col-lg-offset-1 col-md-4 col-sm-4 text-center col_middle">
+					<p>Serving With Love</p>
 				</div>
-				<div class="row row_bottom">
+				<div class="col-lg-3 col-lg-offset-1 col-md-4 col-sm-4 ">
+					<p class="p_right">Daily Lunch Specials</p>
+				</div>
+				<div class="col-lg-1"></div>
+			</div>
+			<div class="row row_bottom">
 				<div class="col-lg-12 col-md-12 col-sm-12 text-center">
-				<img src="images/home/img_home.png" alt="img_home" class="img-responsive hidden-xs">
-				<img src="images/home/ice_bg.png" alt="" class="img-responsive visible-xs">
-				<button type="submit" class="btn text-uppercase order">Order now</button>
-				</div>
+					<img src="images/home/img_home.png" alt="img_home" class="img-responsive hidden-xs">
+					<img src="images/home/ice_bg.png" alt="" class="img-responsive visible-xs">
+					<button type="submit" class="btn text-uppercase order">Order now</button>
 				</div>
 			</div>
-		</section>
-		<section class="blog">
-			<div class="container-fluid">
-				<div class="row">
-						<div class="col-lg-2 col-md-2 col-sm-1"></div>
+		</div>
+	</section>
+	<section class="blog">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-1"></div>
 				<div class="col-lg-8 col-md-8 col-sm-10 text-center">
 					<h2>blog</h2>
 					<h3>news, recipes and much more</h3>
 				</div>	
 				<div class="col-lg-2 col-md-2 col-sm-1"></div>	
+			</div>
+			<div class="row row_square text-center">
 
-				</div>
-				<div class="row row_square text-center">
-				
-					<div class=" col-lg-3 col-lg-offset-1  col-md-4 col-sm-4
-					">
-						<img src="images/home/img_1.png" alt="img_1" class="img-responsive center-block square">
-						<div class="blog_text text-center">
+				<div class=" col-lg-3 col-lg-offset-1  col-md-4 col-sm-4">
+					<img src="images/home/img_1.png" alt="img_1" class="img-responsive center-block square">
+					<div class="blog_text text-center">
 						<p class="blog_top">10/03</p>
 						<p class="blog_middle">grand opening!</p>
-						<p class="blog_bottom">&#9899;&#9899;&#9899;</p>					
+						<p class="blog_bottom point">...</p>					
 					</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-4">
-						<img src="images/home/img_2.png" alt="img_2" class="img-responsive center-block square">
-						<div class="blog_text text-center blog_text2">
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4">
+					<img src="images/home/img_2.png" alt="img_2" class="img-responsive center-block square">
+					<div class="blog_text text-center blog_text2">
 						<p class="blog_top">07/03</p>
 						<p class="blog_middle blog_middle2">Mini chilli <br> pretzels</p>
-						<p class=" blog_bottom2">&#9899;&#9899;&#9899;</p>					
+						<p class=" blog_bottom2 point">...</p>					
 					</div>
-					</div>
-					<div class="col-lg-3  col-md-4 col-sm-4">
-            <img src="images/home/img_3.png" alt="img_3" class="img-responsive center-block square square3">
-            <div class="blog_text text-center">
+				</div>
+				<div class="col-lg-3  col-md-4 col-sm-4">
+					<img src="images/home/img_3.png" alt="img_3" class="img-responsive center-block square square3">
+					<div class="blog_text text-center">
 						<p class="blog_top">05/06</p>
 						<p class="blog_middle">summer specials</p>
-						<p class="blog_bottom">&#9899;&#9899;&#9899;</p>					
+						<p class="blog_bottom point">...</p>					
 					</div>
-					</div>
-					
 				</div>
 			</div>
-		</section>
-		<section class="contact">
+		</div>
+	</section>
+	<section class="contact">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-1 col-md-1"></div>
@@ -365,55 +341,55 @@
 		</div>
 	</section>	
 	<footer>
-			<div class="container-fluid">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-2 col-md-3 col-sm-2 text-center">
-				<a class="logo_1" href="#">Renome</a>
+					<a class="logo_1" href="#">Renome</a>
 				</div>
 				<div class="col-lg-4 col-lg-offset-2 col-md-6 col-sm-6 text-center  text-uppercase">
-				<p class="footer">Copyright 2015 Renome by Estetiq</p>
+					<p class="footer">Copyright 2015 Renome by Estetiq</p>
 				</div>
 				<div class="col-lg-4 col-md-3 col-sm-4 text-uppercase  tex-center">
-				<p class="follow">Follow Us:</p>
-				<div class="social_block">	
-				<a href="#" class="social">
-					<img src="images/one_page/fb.png" alt="fb" class="img-responsive"></a>
-					<a href="#" class="social">
-					<img src="images/one_page/twitter.png" alt="twitter" class="img-responsive"></a>
-					<a href="#" class="social">
-					<img src="images/one_page/gplus.png" alt="gplus" class="img-responsive"></a>
+					<p class="follow">Follow Us:</p>
+					<div class="social_block">	
+						<a href="#" class="social">
+							<img src="images/one_page/fb.png" alt="fb" class="img-responsive"></a>
+							<a href="#" class="social">
+								<img src="images/one_page/twitter.png" alt="twitter" class="img-responsive"></a>
+								<a href="#" class="social">
+									<img src="images/one_page/gplus.png" alt="gplus" class="img-responsive"></a>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-			</div>
-		</footer>	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$("a.fancyimage").fancybox();
-		});
-	</script>
-	<script type="text/javascript">
-	$(function(){
-		$('#form_first','#form_second').submit(function(e){
-			e.preventDefault();
-			var formdata = $(this).serialize();
-			$.ajax({
-				url: 'send.php',
-				data: formdata,
-				type: 'post',
-				success: function(respond){
-					alert(respond);
-				},
-				error: function(){
-					alert('An error has occurred. Please try again later.');
-				}
-			});
-		});
-	});	
-</script>	
-<script src="js/renome.js"></script>
-</body>
-</html>
+				</footer>	
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+				<script src="js/bootstrap.min.js"></script>
+				<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+				<script type="text/javascript">
+					$(document).ready(function() {
+						$("a.fancyimage").fancybox();
+					});
+				</script>
+				<script type="text/javascript">
+					$(function(){
+						$('#form_first','#form_second').submit(function(e){
+							e.preventDefault();
+							var formdata = $(this).serialize();
+							$.ajax({
+								url: 'send.php',
+								data: formdata,
+								type: 'post',
+								success: function(respond){
+									alert(respond);
+								},
+								error: function(){
+									alert('An error has occurred. Please try again later.');
+								}
+							});
+						});
+					});	
+				</script>	
+				<script src="js/renome.js"></script>
+			</body>
+			</html>
